@@ -20,7 +20,7 @@ The easiest way to explore how to use game engines for RL-trained agents is expl
 - Godot Examples: https://github.com/edbeeching/godot_rl_agents_examples
 
 
-### Walkthrough: Unity SoccerTwos Environment
+## Walkthrough: Unity SoccerTwos Environment
 
 We use the provided example ML-Agents environment from Unity called [SoccerTwos](https://unity.com/blog/games/made-with-unity-soccer-robots-with-ml-agents). You do not need to download Unity game engine separately to train and visualise agents, but only clone the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents). To train your first AI football team, follow instructions below: 
 
@@ -45,7 +45,7 @@ mlagents-learn ./config/poca/SoccerTwos.yaml \
 To train a reasonably good team, it can take 12-48 hours, but of course everything depends on how complex your models are. The default model for training uses [MA-POCA](https://rlg.mlanctot.info/2021/papers/AAAI22-RLG_paper_32.pdf), whose parameters are defined in `./config/poca/SoccerTwos.yaml`. By tweaking the `.yaml` file you can change the size and layers of the neural network models, and control typical hyperparameters like learning rates and time discounting. For more, see [documentation](https://unity-technologies.github.io/ml-agents/Training-ML-Agents/), or see CLI docs with `mlagents-learn --help`.
 
 
-### Useful Tips
+#### Useful Tips
 
 To resume an interrupted training from an existing model:
 
